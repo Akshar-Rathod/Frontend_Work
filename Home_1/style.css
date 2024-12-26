@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #eaf0fe;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.gray {
+  color: gray !important;
+}
+
+/* navbar starts here  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.left {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left > .heading {
+  font-size: 20px;
+}
+
+.left > .heading > span {
+  color: #6999fd;
+}
+
+.input-container {
+  margin-left: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 25px;
+}
+
+.input-container i {
+  margin-right: 10px;
+}
+
+.invisible-input {
+  width: 100%;
+  border: none;
+  background: none;
+  color: transparent;
+  caret-color: transparent;
+  font-size: 16px;
+}
+
+.invisible-input::placeholder {
+  color: black;
+}
+
+.right {
+  margin-right: 50px;
+}
+
+nav .right ul {
+  display: flex;
+}
+
+nav .right ul li {
+  list-style: none;
+}
+
+nav .right ul li a {
+  text-decoration: none;
+  padding: 5px 35px;
+  border: 2px solid white;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.38);
+  color: rgb(68, 68, 68);
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+/* navbar ends here  */
+
+/* main starts here  */
+
+main {
+  max-height: 70vh;
+  max-width: 90vw;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.m-left {
+  height: 100%;
+  width: 49%;
+}
+
+.m-left > .up {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0px 0px 17px -8px #393939;
+}
+
+.m-left > .up > h1 {
+  font-size: 2.5rem;
+  margin: 15px 30px;
+  font-weight: 900;
+  color: #333;
+}
+
+.m-left > .up > h1 > span {
+  color: #6999fd;
+}
+
+.m-left > .up > .btngp {
+  height: 75px;
+  margin: 0px 30px;
+}
+
+.m-left > .up > .btngp > a:nth-child(1) {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #393939;
+  font-size: 1rem;
+  color: white;
+  padding: 15px 15px 2px 45px;
+  font-weight: 100;
+}
+
+.m-left > .up > .btngp > a:nth-child(2) {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  width: 200px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 15px 15px 2px 45px;
+  color: #393939;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.m-left > .up > p {
+  margin: 10px 30px 15px 30px;
+  font-size: 0.8rem;
+}
+
+.m-left > .down {
+  margin-top: 21px;
+  width: 100%;
+  height: 170px !important;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 17px -8px #393939;
+}
+
+.m-left > .down > .d-left {
+  margin: 30px;
+}
+
+.m-left > .down > .d-left > h2 {
+  color: #333;
+}
+
+.m-left > .down > .d-left > .btngp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.m-left > .down > .d-left > .btngp > a:nth-child(1) {
+  background-color: #9bfbd6;
+  padding: 16px 20px;
+  border-radius: 7px;
+  margin: 0px 40px 0px 0px;
+  text-decoration: none;
+  color: #333;
+}
+
+.m-left > .down > .d-left > .btngp > a:nth-child(3) {
+  background-color: #9bfbd6;
+  padding: 16px 20px;
+  border-radius: 7px;
+  margin: 0px 0px 0px 40px;
+  text-decoration: none;
+  color: #333;
+}
+
+.m-left > .down > .d-left > .btngp > .pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.m-left > .down > .d-left > .btngp > .pause > a > i {
+  color: #333;
+}
+
+.m-left > .down > .d-right {
+  margin: auto;
+}
+
+.m-right {
+  background-color: white;
+  width: 49%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 17px -8px #393939;
+  position: relative;
+}
+
+.m-right > .location {
+  margin: 30px 0px 0px 30px;
+  color: #333;
+}
+
+.m-right > .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.m-right > .img > img {
+  height: 450px;
+  width: 450px;
+  filter: drop-shadow(0px 0px 10px #333);
+  transition: 0.4s ease-in-out;
+}
+
+.m-right > .img > img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 20px #333);
+}
+
+.m-right > .img > a > i {
+  color: #737373;
+}
+
+.m-right > .btngp1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 73%;
+}
+
+.m-right > .btngp1 > a {
+  padding: 15px 20px;
+  border: 1px solid #a2a2a2;
+  border-radius: 50%;
+  color: #a2a2a2;
+  margin-bottom: 10px;
+}
+
+.icon {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: #9bfbd6;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #333;
+  /* border: 10px solid rgba(155, 251, 214, 0.561); */
+  box-shadow: 4px 4px 8px rgba(155, 251, 214, 0.5);
+}
+
+.btngp2 > a {
+  text-decoration: none;
+}
+
+.icon-video {
+  top: 20%;
+  left: 28%;
+}
+
+.icon-expand {
+  top: 40%;
+  right: 30%;
+}
+
+.icon-fingerprint {
+  bottom: 30%;
+  left: 40%;
+}
+
+/* main ends here  */
+
+/* section starts here  */
+
+.container {
+  display: flex;
+  justify-content: space-between; /* optional: adds space between the cards */
+  margin: 20px auto;
+  max-width: 91vw;
+}
+
+.card {
+  flex: 1; /* ensures equal width for all cards */
+  margin: 0 10px; /* optional: adds margin between the cards */
+  box-sizing: border-box; /* ensures padding and border are included in the width */
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: #e0e6fe;
+  height: 70px;
+  width: 259px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.c-left{
+  margin: 10px 15px 0px 0px;
+}
+
+.c-left > a{
+  color: #333;
+}
+
+.c-left > p{
+  font-size: 0.9rem;
+  margin-top: 7px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6999fd;
+  transition: 0.4s;
+  border-radius: 34px;
+  transform: rotate(-90deg);
+}
+
+/* The slider before and after element to create the button */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checkbox checked */
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  transform: translateX(12px);
+  background-color: #6999fd;
+}
